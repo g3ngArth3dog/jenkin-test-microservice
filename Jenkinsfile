@@ -1,14 +1,14 @@
 pipeline{
-	agent any
-	//agent {
-	//	docker {
-	//		image 'python:alpine3.10'
-	//	}
-	//}
+	//agent any
+	agent {
+		docker {
+			image 'maven:3.6.3'
+		}
+	}
 	stages {
 		stage('Build') {
 			steps {
-				//sh 'python --version'
+				sh 'mvn --version'
 				echo "Build"
 			}
 		}
