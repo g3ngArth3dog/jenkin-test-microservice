@@ -17,6 +17,7 @@ pipeline{
 			}
 		}
 	} 
+	
 	post {
 		always {
 			echo 'test 1'
