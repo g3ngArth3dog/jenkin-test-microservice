@@ -2,13 +2,13 @@ pipeline{
 	//agent any
 	agent {
 		docker {
-			image 'maven:3.8.5-jdk-11'
+			image 'alphine/helm'
 		}
 	}
 	stages {
 		stage('Build') {
 			steps {
-				sh 'mvn --version'
+				sh 'helm ls'
 				echo "Build"
 			}
 		}
