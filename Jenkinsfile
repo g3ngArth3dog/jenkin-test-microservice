@@ -4,7 +4,7 @@ pipeline{
 		stage('Build') {
 			steps {
 				//sh 'mvn --version'
-				echo "Build"
+				echo "Build tapos"
 			}
 		}
 		stage('Test') {
